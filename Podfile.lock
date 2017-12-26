@@ -1,0 +1,15 @@
+PODS:
+  - PathKit (0.8.0)
+  - Stencil (0.10.1):
+    - PathKit (~> 0.8.0)
+
+DEPENDENCIES:
+  - Stencil
+
+SPEC CHECKSUMS:
+  PathKit: dcab05d701474011aae0e40cf892298a831f63d6
+  Stencil: 40b382c52edab08f1e800e6144c1f04ae47a7a9a
+
+PODFILE CHECKSUM: e42ff5d9dcbd0946afbb6db9f58b2078f7c17687
+
+COCOAPODS: 1.3.1

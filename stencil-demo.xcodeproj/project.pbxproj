@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102C4B5254E7BF544D06FC46 /* Pods_stencil_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA08E0FBE9ED3B45C155055 /* Pods_stencil_demo.framework */; };
 		F145824A1FF2F71500057BCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14582491FF2F71500057BCB /* AppDelegate.swift */; };
 		F145824C1FF2F71500057BCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145824B1FF2F71500057BCB /* ViewController.swift */; };
 		F145824F1FF2F71500057BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F145824D1FF2F71500057BCB /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		385609E4B8332F05873F2A23 /* Pods-stencil-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stencil-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-stencil-demo/Pods-stencil-demo.release.xcconfig"; sourceTree = "<group>"; };
+		5EA08E0FBE9ED3B45C155055 /* Pods_stencil_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stencil_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		928B1A36AD0941D6B53C5B71 /* Pods-stencil-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stencil-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stencil-demo/Pods-stencil-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		F14582461FF2F71500057BCB /* stencil-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stencil-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14582491FF2F71500057BCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F145824B1FF2F71500057BCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102C4B5254E7BF544D06FC46 /* Pods_stencil_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76D054DF983BD49A34EAB112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				928B1A36AD0941D6B53C5B71 /* Pods-stencil-demo.debug.xcconfig */,
+				385609E4B8332F05873F2A23 /* Pods-stencil-demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF19D15FEF29276D04476339 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EA08E0FBE9ED3B45C155055 /* Pods_stencil_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F145823D1FF2F71500057BCB = {
 			isa = PBXGroup;
 			children = (
 				F14582481FF2F71500057BCB /* stencil-demo */,
 				F14582471FF2F71500057BCB /* Products */,
+				76D054DF983BD49A34EAB112 /* Pods */,
+				BF19D15FEF29276D04476339 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F14582581FF2F71500057BCB /* Build configuration list for PBXNativeTarget "stencil-demo" */;
 			buildPhases = (
+				AE6B377B7D754E110C43FC45 /* [CP] Check Pods Manifest.lock */,
 				F14582421FF2F71500057BCB /* Sources */,
 				F14582431FF2F71500057BCB /* Frameworks */,
 				F14582441FF2F71500057BCB /* Resources */,
+				E2CE8CDA59A8ADB4E64DF22F /* [CP] Embed Pods Frameworks */,
+				69E0CB68A153BC08F12292D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69E0CB68A153BC08F12292D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stencil-demo/Pods-stencil-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE6B377B7D754E110C43FC45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stencil-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2CE8CDA59A8ADB4E64DF22F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-stencil-demo/Pods-stencil-demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PathKit/PathKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Stencil/Stencil.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PathKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stencil.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stencil-demo/Pods-stencil-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F14582421FF2F71500057BCB /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		F14582591FF2F71500057BCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928B1A36AD0941D6B53C5B71 /* Pods-stencil-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +371,7 @@
 		};
 		F145825A1FF2F71500057BCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385609E4B8332F05873F2A23 /* Pods-stencil-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
